@@ -21,7 +21,7 @@ while(!email || !email.includes(`@`) || email.startsWith(`@`) || email.endsWith(
 
 let birthYear = prompt("Ваш рік народження")
 if (birthYear) birthYear = birthYear.replaceAll(` `, ``);
-while (!birthYear) {
+while (!isNaN) {
     birthYear = prompt("Ваш рік народження");
     if (birthYear) birthYear = birthYear.replaceAll(` `, ``);
 }
