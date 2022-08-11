@@ -19,9 +19,9 @@ while(!email || !email.includes(`@`) || email.startsWith(`@`) || email.endsWith(
     if (email) email = email.replaceAll(` `,``).toLowerCase();
 }
 
-let birthYear = prompt("Ваш рік народження")
+let birthYear = prompt("Ваш рік народження");
 if (birthYear) birthYear = birthYear.replaceAll(` `, ``);
-while (!isNaN) {
+while (isNaN(birthYear)) {
     birthYear = prompt("Ваш рік народження");
     if (birthYear) birthYear = birthYear.replaceAll(` `, ``);
 }
