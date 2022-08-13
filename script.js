@@ -1,8 +1,8 @@
 let name = prompt("Ваше ім'я");
-if (name) name = name.replaceAll(` `,``);
+if (name) name = name.trim();
 while (!name) {
     name = prompt("Ваше ім'я");
-    if (name) name = name.replaceAll(` `,``);
+    if (name) name = name.trim();
 }
 
 let surname = prompt("Ваше прізвище");
